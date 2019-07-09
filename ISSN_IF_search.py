@@ -26,8 +26,8 @@ def get_issn_aqi(journal):
 def main():
     #get_issn_aqi('CA-A CANCER JOURNAL FOR CLINICIANS')
 
-    with open(r'D:\Tasly_Genet\分布式查询\xml_to_json\journal_ISSN.csv', 'w', newline='', encoding='UTF-8') as f2,\
-            open(r'D:\Tasly_Genet\分布式查询\xml_to_json\journal_name.txt', 'r') as f1:
+    with open(r'xxxxx\journal_ISSN.csv', 'w', newline='', encoding='UTF-8') as f2,\
+            open(r'xxxxxxx\journal_name.txt', 'r') as f1:
 
             fieldnames = ['journal_name', 'abbreviation','ISSN','num_per_year','5_year_avg_IF','no_self_citation_IF','IF']
             writer = csv.DictWriter(f2, fieldnames=fieldnames)

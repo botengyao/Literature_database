@@ -2,7 +2,7 @@ import xmltodict
 import csv
 import os
 '''
-Remember to customize the following file directions
+Remember to customize the file paths
 '''
 def get_file_name(file_dir):
     '''
