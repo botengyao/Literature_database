@@ -146,19 +146,16 @@ def analysis_one_xml(file_name):
 
 def main():
 
-    with open('D:\Tasly_Genet\分布式查询\pubmed19n0842.xml\sql_data_2.csv', 'w', newline='',encoding='UTF-8') as f:
+    with open('xxxxxx\sql_data_2.csv', 'w', newline='',encoding='UTF-8') as f:
         fieldnames = ['PMID', 'ISSN', 'PubDate','ArticleTitle', 'Journal','Authors','First_affiliation','Abstract','Meshheading','keywords','doi','Country','IF']
                       #'ArticleTitle','Journal','Abstract','Authors', 'Keyword','MeshHeading','doi']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
     issn_IF()
     print("***********RUNING**************")
-    files = get_file_name(r'D:\Tasly_Genet\分布式查询\xml_data')
+    files = get_file_name(r'xxxxxxxx\xml_data')
     for file_name in files:
         analysis_one_xml(file_name)
-
-    #with open('D:\Tasly_Genet\分布式查询\pubmed19n0842.xml\pubmed19n0842.json', "w") as wd:
-    #    wd.write(json.dumps(xml_str))
 
 if __name__ == '__main__':
     main()
